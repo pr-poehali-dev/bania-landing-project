@@ -1,6 +1,7 @@
 import Icon from '@/components/ui/icon';
 import SiteNav from '@/components/SiteNav';
 import Products from '@/components/Products';
+import QuizBlock from '@/components/QuizBlock';
 import SiteFooter from '@/components/SiteFooter';
 
 const HERO = 'https://cdn.poehali.dev/projects/9556729e-930f-4ad1-9975-51ff620c6db1/files/ea646fe0-a44f-4ad9-893d-5a90d42c8f42.jpg';
@@ -68,6 +69,8 @@ const Index = () => {
       </section>
 
       <Products />
+
+      <QuizBlock />
 
       <SiteFooter />
     </div>
