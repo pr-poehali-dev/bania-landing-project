@@ -73,13 +73,13 @@ const Index = () => {
 
       <Products />
 
-      <Materials />
-
-      <TrustStats />
-
       <QuizBlock />
 
       <ChecklistBlock />
+
+      <TrustStats />
+
+      <Materials />
 
       <SiteFooter />
     </div>
