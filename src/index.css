@@ -4,92 +4,108 @@
 
 @layer base {
   :root {
-    --background: 28 20% 6%;
-    --foreground: 40 30% 92%;
+    /* Банный жар — светлая тема */
+    --background: 38 41% 95%;
+    --foreground: 27 28% 13%;
 
-    --card: 28 18% 9%;
-    --card-foreground: 40 30% 92%;
+    --card: 40 47% 97%;
+    --card-foreground: 27 28% 13%;
 
-    --popover: 28 18% 9%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 40 47% 97%;
+    --popover-foreground: 27 28% 13%;
 
-    --primary: 38 55% 55%;
-    --primary-foreground: 28 30% 8%;
+    --primary: 23 62% 44%;
+    --primary-foreground: 40 47% 97%;
+    --primary-hover: 24 66% 35%;
+    --primary-active: 25 69% 28%;
+    --primary-highlight: 29 55% 85%;
 
-    --secondary: 28 15% 14%;
-    --secondary-foreground: 40 30% 92%;
+    --secondary: 41 41% 91%;
+    --secondary-foreground: 27 28% 13%;
 
-    --muted: 28 12% 16%;
-    --muted-foreground: 40 12% 60%;
+    --muted: 41 41% 91%;
+    --muted-foreground: 33 15% 42%;
 
-    --accent: 38 55% 55%;
-    --accent-foreground: 28 30% 8%;
+    --accent: 29 55% 85%;
+    --accent-foreground: 25 69% 28%;
 
-    --destructive: 0 62% 40%;
-    --destructive-foreground: 40 30% 92%;
+    --destructive: 0 46% 44%;
+    --destructive-foreground: 40 47% 97%;
 
-    --border: 38 20% 22%;
-    --input: 38 20% 22%;
-    --ring: 38 55% 55%;
+    --border: 42 44% 85%;
+    --input: 42 44% 85%;
+    --ring: 23 62% 44%;
 
-    --gold: 38 60% 58%;
-    --gold-soft: 40 45% 72%;
+    /* Семантические */
+    --text-muted: 33 15% 42%;
+    --text-faint: 37 22% 63%;
+    --surface-offset: 42 44% 85%;
+    --success: 118 25% 39%;
+    --error: 0 46% 44%;
+    --stone: 111 4% 55%;
 
-    --radius: 0.25rem;
+    /* Продуктовые акценты */
+    --wood-cedar: 37 43% 62%;
+    --wood-alder: 22 40% 39%;
+    --stone-marble: 150 5% 64%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 40 47% 97%;
+    --sidebar-foreground: 27 28% 13%;
+    --sidebar-primary: 23 62% 44%;
+    --sidebar-primary-foreground: 40 47% 97%;
+    --sidebar-accent: 41 41% 91%;
+    --sidebar-accent-foreground: 27 28% 13%;
+    --sidebar-border: 42 44% 85%;
+    --sidebar-ring: 23 62% 44%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Банный жар — тёмная тема (обожжённое дерево) */
+    --background: 30 21% 9%;
+    --foreground: 37 27% 89%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 30 20% 12%;
+    --card-foreground: 37 27% 89%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 30 20% 12%;
+    --popover-foreground: 37 27% 89%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 27 67% 55%;
+    --primary-foreground: 30 21% 9%;
+    --primary-hover: 27 76% 63%;
+    --primary-active: 24 66% 45%;
+    --primary-highlight: 27 40% 24%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 32 17% 15%;
+    --secondary-foreground: 37 27% 89%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 32 17% 15%;
+    --muted-foreground: 34 18% 59%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 27 40% 24%;
+    --accent-foreground: 37 27% 89%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 46% 44%;
+    --destructive-foreground: 37 27% 89%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 32 17% 18%;
+    --input: 32 17% 18%;
+    --ring: 27 67% 55%;
+
+    --text-muted: 34 18% 59%;
+    --text-faint: 34 14% 45%;
+    --surface-offset: 32 17% 18%;
+
+    --sidebar-background: 30 20% 12%;
+    --sidebar-foreground: 37 27% 89%;
+    --sidebar-primary: 27 67% 55%;
+    --sidebar-primary-foreground: 30 21% 9%;
+    --sidebar-accent: 32 17% 15%;
+    --sidebar-accent-foreground: 37 27% 89%;
+    --sidebar-border: 32 17% 18%;
+    --sidebar-ring: 27 67% 55%;
   }
 }
 
@@ -100,7 +116,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Golos Text", sans-serif;
+    font-family: "Onest", "Inter", sans-serif;
   }
 
   h1,
@@ -108,27 +124,19 @@
   h3,
   h4,
   .font-display {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Onest", "Inter", sans-serif;
   }
 }
 
 @layer utilities {
-  .text-gold {
-    color: hsl(var(--gold));
+  .text-muted {
+    color: hsl(var(--text-muted));
   }
-  .bg-gold {
-    background-color: hsl(var(--gold));
+  .text-faint {
+    color: hsl(var(--text-faint));
   }
-  .gold-gradient {
-    background: linear-gradient(
-      135deg,
-      hsl(var(--gold-soft)),
-      hsl(var(--gold)) 55%,
-      hsl(38 45% 42%)
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  .bg-surface-offset {
+    background-color: hsl(var(--surface-offset));
   }
   .grain {
     position: relative;
@@ -138,10 +146,7 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  }
-  .tracking-luxe {
-    letter-spacing: 0.35em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
   }
 }
 

@@ -19,13 +19,17 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				display: ['Cormorant Garamond', 'serif'],
-				sans: ['Golos Text', 'sans-serif'],
+				display: ['Onest', 'Inter', 'sans-serif'],
+				sans: ['Onest', 'Inter', 'sans-serif'],
 			},
 			colors: {
-				gold: {
-					DEFAULT: 'hsl(var(--gold))',
-					soft: 'hsl(var(--gold-soft))'
+				success: 'hsl(var(--success))',
+				error: 'hsl(var(--error))',
+				stone: 'hsl(var(--stone))',
+				wood: {
+					cedar: 'hsl(var(--wood-cedar))',
+					alder: 'hsl(var(--wood-alder))',
+					marble: 'hsl(var(--stone-marble))'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -34,7 +38,10 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))',
+					active: 'hsl(var(--primary-active))',
+					highlight: 'hsl(var(--primary-highlight))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
