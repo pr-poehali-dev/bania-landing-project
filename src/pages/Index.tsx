@@ -12,6 +12,7 @@ import Cases from '@/components/Cases';
 import Faq from '@/components/Faq';
 import VideoTour from '@/components/VideoTour';
 import GuideBlock from '@/components/GuideBlock';
+import FinalCta from '@/components/FinalCta';
 import SiteFooter from '@/components/SiteFooter';
 
 const HERO = 'https://cdn.poehali.dev/projects/9556729e-930f-4ad1-9975-51ff620c6db1/files/ea646fe0-a44f-4ad9-893d-5a90d42c8f42.jpg';
@@ -101,6 +102,8 @@ const Index = () => {
       <VideoTour />
 
       <GuideBlock />
+
+      <FinalCta />
 
       <SiteFooter />
     </div>

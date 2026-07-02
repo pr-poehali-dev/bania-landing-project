@@ -2,7 +2,7 @@ import Icon from '@/components/ui/icon';
 
 const SiteFooter = () => {
   return (
-    <footer id="contact" className="border-t border-border/60 bg-card/40 grain">
+    <footer className="border-t border-border/60 bg-card/40 grain">
       <div className="container py-20 grid gap-12 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3 mb-5">
