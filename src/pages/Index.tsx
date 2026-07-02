@@ -1,6 +1,7 @@
 import Icon from '@/components/ui/icon';
 import SiteNav from '@/components/SiteNav';
 import Products from '@/components/Products';
+import TrustStats from '@/components/TrustStats';
 import QuizBlock from '@/components/QuizBlock';
 import ChecklistBlock from '@/components/ChecklistBlock';
 import SiteFooter from '@/components/SiteFooter';
@@ -70,6 +71,8 @@ const Index = () => {
       </section>
 
       <Products />
+
+      <TrustStats />
 
       <QuizBlock />
 
