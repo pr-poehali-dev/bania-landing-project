@@ -23,12 +23,12 @@ const SiteNav = () => {
         </a>
 
         {/* Навигация */}
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 order-3 w-full md:order-none md:w-auto">
+        <nav className="flex flex-nowrap items-center justify-center gap-x-6 order-3 w-full overflow-x-auto md:order-none md:w-auto md:flex-1 md:mx-6">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors whitespace-nowrap"
             >
               {l.label}
             </a>
@@ -40,9 +40,9 @@ const SiteNav = () => {
           href="https://saunbas.ru"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2 rounded-lg bg-pool px-4 py-2.5 text-sm font-medium text-white hover:bg-pool-hover transition-colors"
+          className="group inline-flex items-center gap-2 rounded-lg bg-pool px-4 py-2.5 text-sm font-medium text-white hover:bg-pool-hover transition-colors whitespace-nowrap shrink-0"
         >
-          Также строим бассейны
+          Строим бассейны
           <Icon
             name="ArrowRight"
             size={16}
