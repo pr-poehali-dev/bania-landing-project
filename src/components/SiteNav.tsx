@@ -1,69 +1,87 @@
-import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 
 const links = [
-  { to: '/', label: 'Главная' },
-  { to: '/services', label: 'Услуги' },
+  { href: '#saunas', label: 'Сауны' },
+  { href: '#banyas', label: 'Бани' },
+  { href: '#hammams', label: 'Хаммамы' },
+  { href: '#works', label: 'Наши работы' },
+  { href: '#contact', label: 'Контакты' },
 ];
 
 const SiteNav = () => {
-  const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
       <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-3 group">
-          <span className="flex items-center justify-center w-9 h-9 rounded-full border border-gold/60">
-            <Icon name="Flame" size={18} className="text-gold" />
+        {/* Логотип */}
+        <a href="#top" className="flex flex-col leading-none">
+          <span className="font-display font-bold text-2xl tracking-tight text-foreground">
+            SAUN<span className="text-primary">BAS</span>
           </span>
-          <span className="font-display text-2xl tracking-wide">
-            Термы <span className="text-gold">Аврора</span>
+          <span className="text-[11px] text-faint mt-1 font-normal">
+            Строим с 2008 года · 18 лет на Дальнем Востоке
           </span>
-        </Link>
+        </a>
 
-        <nav className="hidden md:flex items-center gap-10">
+        {/* Навигация */}
+        <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              className={`text-sm uppercase tracking-[0.2em] transition-colors ${
-                pathname === l.to ? 'text-gold' : 'text-muted-foreground hover:text-foreground'
-              }`}
+            <a
+              key={l.href}
+              href={l.href}
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
-            </Link>
+            </a>
           ))}
-          <a
-            href="#contact"
-            className="px-6 py-2.5 border border-gold/70 text-gold text-sm uppercase tracking-[0.15em] hover:bg-gold hover:text-primary-foreground transition-all"
-          >
-            Забронировать
-          </a>
         </nav>
 
-        <button className="md:hidden text-gold" onClick={() => setOpen(!open)}>
+        {/* Правый угол */}
+        <div className="hidden lg:flex items-center">
+          <a
+            href="https://saunbas.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-hover transition-colors"
+          >
+            Также строим бассейны
+            <Icon
+              name="ArrowRight"
+              size={16}
+              className="transition-transform group-hover:translate-x-1"
+            />
+          </a>
+        </div>
+
+        {/* Мобильная кнопка */}
+        <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)}>
           <Icon name={open ? 'X' : 'Menu'} size={26} />
         </button>
       </div>
 
+      {/* Мобильное меню */}
       {open && (
-        <div className="md:hidden border-t border-border/60 bg-background/95 px-6 py-6 flex flex-col gap-5">
+        <div className="lg:hidden border-t border-border bg-background px-6 py-6 flex flex-col gap-5">
           {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
+            <a
+              key={l.href}
+              href={l.href}
               onClick={() => setOpen(false)}
-              className={`text-sm uppercase tracking-[0.2em] ${
-                pathname === l.to ? 'text-gold' : 'text-muted-foreground'
-              }`}
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
             >
               {l.label}
-            </Link>
+            </a>
           ))}
-          <a href="#contact" onClick={() => setOpen(false)} className="text-gold text-sm uppercase tracking-[0.2em]">
-            Забронировать
+          <a
+            href="https://saunbas.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary"
+          >
+            Также строим бассейны
+            <Icon name="ArrowRight" size={16} />
           </a>
         </div>
       )}
