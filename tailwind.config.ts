@@ -26,6 +26,10 @@ export default {
 				success: 'hsl(var(--success))',
 				error: 'hsl(var(--error))',
 				stone: 'hsl(var(--stone))',
+				pool: {
+					DEFAULT: 'hsl(210 79% 46%)',
+					hover: 'hsl(210 79% 39%)'
+				},
 				wood: {
 					cedar: 'hsl(var(--wood-cedar))',
 					alder: 'hsl(var(--wood-alder))',
