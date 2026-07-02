@@ -23,12 +23,12 @@ const SiteNav = () => {
         </a>
 
         {/* Навигация */}
-        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 order-3 w-full md:order-none md:w-auto md:flex-1 md:mx-8">
+        <nav className="flex flex-nowrap items-center justify-center gap-x-6 order-3 w-full overflow-x-auto md:order-none md:w-auto md:flex-1 md:mx-8">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors whitespace-nowrap"
             >
               {l.label}
             </a>
