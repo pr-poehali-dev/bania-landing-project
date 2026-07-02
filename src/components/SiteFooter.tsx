@@ -92,11 +92,28 @@ const SiteFooter = () => {
       </div>
 
       <div className="border-t border-border">
-        <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-muted-foreground">
-          <span className="font-display font-bold text-xl text-foreground">
-            SAUN<span className="text-primary">BAS</span>
-          </span>
-          <span>© {new Date().getFullYear()} SAUNBAS. Все права защищены.</span>
+        <div className="container py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+          <div className="flex flex-col gap-2">
+            <span className="font-display font-bold text-xl text-foreground">
+              SAUN<span className="text-primary">BAS</span>
+            </span>
+            <span className="text-sm text-muted-foreground">
+              © 2008–2026 SAUNBAS. Все права защищены.
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-2 md:items-end">
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                Политика конфиденциальности
+              </a>
+              <span className="text-faint">·</span>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                Договор оферты
+              </a>
+            </div>
+            <span className="text-sm text-faint">ИНН / ОГРН [ваши реквизиты]</span>
+          </div>
         </div>
       </div>
     </footer>
