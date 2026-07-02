@@ -1,10 +1,9 @@
 import Icon from '@/components/ui/icon';
 
 const stats = [
-  { num: '17 лет', label: 'На рынке Дальнего Востока с 2008 года' },
-  { num: '140+', label: 'Реализованных проектов бань и парных' },
-  { num: '5 лет', label: 'Гарантия на конструкцию и оборудование' },
-  { num: '3 города', label: 'Владивосток · Хабаровск · Южно-Сахалинск' },
+  { num: '18 лет', label: 'На рынке Дальнего Востока с 2008 года' },
+  { num: '40+', label: 'Реализованных проектов бань и парных' },
+  { num: 'до 5 лет', label: 'Гарантия на оборудование' },
 ];
 
 const TrustStats = () => {
@@ -15,7 +14,7 @@ const TrustStats = () => {
           Почему <span className="text-primary">SAUNBAS</span>
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
           {stats.map((s) => (
             <div
               key={s.num}
